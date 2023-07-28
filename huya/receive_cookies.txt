@@ -1,0 +1,15 @@
+Host: activityapi.huya.com
+Connection: keep-alive
+sec-ch-ua: "Not.A/Brand";v="8", "Chromium";v="114", "Microsoft Edge";v="114"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: https://www.huya.com/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: udb_guiddata=55e4930959074ad49db8bc087902fbc3; udb_deviceid=w_640183454251548672; __yamid_tt1=0.7416792386906865; __yamid_new=CA09F8DE8240000116CC137058F01EA8; game_did=cPXexSVyLQjSrvKqW1dCXsKDBGpICYfxpJz; alphaValue=0.80; udb_other=%7B%22lt%22%3A%221681284352690%22%2C%22isRem%22%3A%221%22%7D; udb_uid=1724198398; udb_version=1.0; yyuid=1724198398; guid=0a70ceee220962635a01602561253f86; udb_cred=CjCFFjAUzP5WOf1QDMAv_lKiPeOQS_GQo19r-qjfSrwI7WVflle_7efcZt67FCVdIaq9mssQjfLmv3azm-xAPqEccfweXBzOt2BW5p1oJHk88ioNdvOiZNxnnyz3JjuYWmM; udb_origin=0; udb_status=1; SoundValue=0.00; videoBitRate=500; isInLiveRoom=true; udb_biztoken=AQCEW-uWJIQu1V5NzbIJBNdh6jSUaUYAgSDf45mu75Oiu99WBvSZvzGuJBfJO5_nXiWyyAwgGaRwE5UcdHZkj9SUEg1o3WDqOqdjInGxHrfYgk_kh5XBP637QFyhH6j8z72qzU8enF1_YiueGxAU3JmvILirKED5sw7N7350Hf1uYUgmfphg1L7SHjsDUFgNqQr7FRYiMrl45hVcuTCuaQXlvQiRNqEZOv3wf2LCACFNxfWzeXOupof7l0GuNoGf4zjHqu5snfZEhXYZJ7yinvIs-ckDCtLy3l0lfnosQoQpJItWI6p3oe6VZ8KHjXcEYI8dVAFyjkdu5ZtwAtbeXtoD; udb_passdata=3; __yasmid=0.7416792386906865; __yaoldyyuid=1724198398; _yasids=__rootsid%3DCA52BFA0A1C00001AF122F30839010C2; ya_rso=cpy; h_unt=1686910791; huya_flash_rep_cnt=176; rep_cnt=117; huya_web_rep_cnt=389

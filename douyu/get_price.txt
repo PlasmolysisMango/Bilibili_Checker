@@ -1,0 +1,17 @@
+Host: www.douyu.com
+Connection: keep-alive
+sec-ch-ua: "Not.A/Brand";v="8", "Chromium";v="114", "Microsoft Edge";v="114"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43
+Accept: application/json, text/plain, */*
+x-dy-traceid: 3eb0ece65c9b8e19:3eb0ece65c9b8e19:0:001756
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-platform: "Windows"
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.douyu.com/topic/xqtd11?dyshid=9b41818-f83af870a942aae6bdcff53c00081601
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: acf_did=f83af870a942aae6bdcff53c00081601; dy_did=f83af870a942aae6bdcff53c00081601; dy_did=f83af870a942aae6bdcff53c00081601; dy_teen_mode=%7B%22uid%22%3A%22162797592%22%2C%22status%22%3A0%2C%22birthday%22%3A%22%22%2C%22password%22%3A%22%22%7D; acf_uid=162797592; acf_username=162797592; acf_nickname=%E8%B4%A8%E5%A3%81%E5%88%86%E7%A6%BB%E7%9A%84%E8%8A%92%E6%9E%9C%E5%B9%B2; acf_own_room=1; acf_groupid=1; acf_phonestatus=1; acf_ct=0; acf_ltkid=52337205; acf_biz=1; acf_auth=a61fl3z8ng%2BlNle8qkdzDhJuhqiptRx%2BL3Akf%2FW%2Fbdeij6omvhp%2FBbgwqIRyfOoSnETl8i2UKo2NTtQ2VHyDwQO7NBOiv0hK%2B%2BCpc%2B4vqFdPZBiixeEPxAs; dy_auth=adadL8BwRfyD7jOGxugcfJgVzClfbwRMoRj9yIZuzEhYHO53a19yFV0Ug1P%2BwmupLKKqt3fDtsXitg2CPPv3b6PUNanaQXvn8iJurR41GLuOD8Ro5NJklxQ; wan_auth37wan=ee83d88d9eccGFwnNacyzXYegxrs6cRYobCr4vTzjVmtXkk0fMDre%2FruUa74j64MM7jqlhCsYMEoPoNrSLXVgZyT9DbTmsHRfZZwcr3R69zIKGYe1vc; acf_stk=e81c7f7e18c6556c; acf_avatar=//apic.douyucdn.cn/upload/avanew/face/201709/06/10/b4cd2b25dc650d35cb4e5441bae27edd_; cvl_csrf_token=2171485fc28b445c9fa98f8715cc46f9

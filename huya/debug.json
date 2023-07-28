@@ -1,0 +1,69 @@
+getUserLevel_matchComponent19({
+    "status": 200,
+    "data": {
+        "userExp": 180,
+        "currentLevel": {
+            "level": 4,
+            "actId": 426,
+            "levelName": "开播18天",
+            "levelExp": 180,
+            "levelDesc": "",
+            "prizeList": [
+                {
+                    "actId": 426,
+                    "level": 4,
+                    "prizeId": 5478,
+                    "prizeType": 1,
+                    "prizeName": "星琼*1000",
+                    "prizeImg": "https://huyaimg.msstatic.com/cdnimage/activity/commonprize/prize_logo_1685061314.1309.png",
+                    "prizeAttr": 1,
+                    "prizeStatus": 0,
+                    "awardType": 1,
+                    "probability": 1.0,
+                    "isAdvanced": 0
+                }
+            ]
+        },
+        "nextLevel": {
+            "level": 5,
+            "actId": 426,
+            "levelName": "开播26天",
+            "levelExp": 260,
+            "levelDesc": "",
+            "prizeList": [
+                {
+                    "actId": 426,
+                    "level": 5,
+                    "prizeId": 5480,
+                    "prizeType": 1,
+                    "prizeName": "星琼*1000",
+                    "prizeImg": "https://huyaimg.msstatic.com/cdnimage/activity/commonprize/prize_logo_1685061330.6759.png",
+                    "prizeAttr": 1,
+                    "prizeStatus": 0,
+                    "awardType": 1,
+                    "probability": 1.0,
+                    "isAdvanced": 0
+                }
+            ]
+        },
+        "levelPrizeStatus": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": -1,
+            "6": -1
+        },
+        "payPassport": 0,
+        "advancedPrizeStatus": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": -1,
+            "6": -1
+        }
+    },
+    "msg": "请求成功",
+    "nowTime": 1687543531
+})
