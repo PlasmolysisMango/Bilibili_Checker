@@ -33,8 +33,8 @@ taskId_config = [
     #     "name": "里程碑-累计开播26天"
     # },
     {
-        "taskId": 217726,
-        "name": "里程碑-累计开播35天"
+        "taskId": 224355,
+        "name": "进阶主播开播18天"
     },
 ]
 
@@ -77,6 +77,7 @@ class GetStatus(DouyuRequest):
         }
         r = requests.get(url=self.url, headers=self.headers,
                          params=params)
+        r.encoding = r.apparent_encoding
         return r.text
 
     def update(self):
@@ -127,7 +128,7 @@ class BonusRecord(DouyuRequest):
         params = {
             "pageSize":	10,
             "currentPage": 1,
-            "actAlias": "20230530TRHPG",
+            "actAlias": "20230713CEETI",
         }
         r = requests.get(url=self.url, params=params, headers=self.headers)
         return r.text
@@ -145,7 +146,7 @@ class BonusRecord(DouyuRequest):
             dic = eachRawPrice['prizes'][0]
             t = datetime.datetime.fromtimestamp(float(dic['obtTime']))
             if (t.day == datetime.datetime.now().day):
-                todayList.append(json.loads(dic['ext'])[0]['code'])
+                todayList.append(dic['ext'])
         for e in todayList:
             print(e)
 
@@ -158,7 +159,7 @@ def check_time(target_time):
 def just_receive_mode():
     # 目标时间
     target_time = datetime.datetime.strptime(
-        "2023-07-12 18:00:00", r"%Y-%m-%d %H:%M:%S")
+        "2023-08-07 18:00:00", r"%Y-%m-%d %H:%M:%S")
     target_time = target_time - datetime.timedelta(seconds=3)
     print(f"实际预定时间：{target_time}")
     # 检查cookies
@@ -193,8 +194,8 @@ def bonus_record_mode():
     br.update()
 
 def main_loop():
-    # bonus_record_mode()
-    just_receive_mode()
+    bonus_record_mode()
+    # just_receive_mode()
     # update_status()
 
 

@@ -38,19 +38,19 @@ id_config = [
     #    "time": "00:00:00", 
     # }, 
     # {
-    #    "t_id": "a08f73e0",
+    #    "t_id": "31d8aeb1",
     #    "name": "30天",
     #    "time": "00:00:00", 
     # }, 
     {
-       "t_id": "3f43d6cc",
-       "name": "10tian",
+       "t_id": "c3a22c77",
+       "name": "20tian",
        "time": "00:00:00", 
     }, 
 ]
 
 # 此处配置抢兑换码页面的请求中带的csrf字段
-csrf = "ee467393fd5f2c7a632ca0e6f088c77d"
+csrf = "655eede2a026cb2f0989b3ba48dfb9b2"
 
 with open("bilibili/cookies.txt", "r+", encoding="utf-8") as f:
     common_cookies = f.read()
@@ -170,8 +170,8 @@ def single_task(check_status = True, enable_conf_time = True, just_receive = Fal
 def just_receive_mode():
     update_status()
     # 目标时间
-    target_time = datetime.datetime.strptime("2023-07-29 00:00:00", r"%Y-%m-%d %H:%M:%S")
-    target_time = target_time - datetime.timedelta(seconds=2)
+    target_time = datetime.datetime.strptime("2023-08-29 00:00:00", r"%Y-%m-%d %H:%M:%S")
+    target_time = target_time - datetime.timedelta(seconds=0)
     print(f"实际预定时间：{target_time}")
     while (True):
         if check_time(target_time):
