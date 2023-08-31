@@ -1,49 +1,33 @@
 [
     {
         "level": 1,
-        "actId": 438,
+        "actId": 446,
+        "levelName": "开播1天",
+        "levelExp": 10,
+        "levelDesc": "",
+        "prizeList": []
+    },
+    {
+        "level": 2,
+        "actId": 446,
         "levelName": "开播3天",
         "levelExp": 30,
         "levelDesc": "",
         "prizeList": []
     },
     {
-        "level": 2,
-        "actId": 438,
+        "level": 3,
+        "actId": 446,
         "levelName": "开播5天",
         "levelExp": 50,
         "levelDesc": "",
         "prizeList": []
     },
     {
-        "level": 3,
-        "actId": 438,
-        "levelName": "开播10天",
-        "levelExp": 100,
-        "levelDesc": "",
-        "prizeList": []
-    },
-    {
         "level": 4,
-        "actId": 438,
-        "levelName": "开播18天",
-        "levelExp": 180,
-        "levelDesc": "",
-        "prizeList": []
-    },
-    {
-        "level": 5,
-        "actId": 438,
-        "levelName": "开播26天",
-        "levelExp": 260,
-        "levelDesc": "",
-        "prizeList": []
-    },
-    {
-        "level": 6,
-        "actId": 438,
-        "levelName": "开播35天",
-        "levelExp": 350,
+        "actId": 446,
+        "levelName": "开播6天",
+        "levelExp": 60,
         "levelDesc": "",
         "prizeList": []
     }

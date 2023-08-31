@@ -43,14 +43,14 @@ id_config = [
     #    "time": "00:00:00", 
     # }, 
     {
-       "t_id": "c3a22c77",
+       "t_id": "64822a47",
        "name": "20tian",
        "time": "00:00:00", 
     }, 
 ]
 
 # 此处配置抢兑换码页面的请求中带的csrf字段
-csrf = "655eede2a026cb2f0989b3ba48dfb9b2"
+csrf = "2960d4eac34275866f0575fd6a05340c"
 
 with open("bilibili/cookies.txt", "r+", encoding="utf-8") as f:
     common_cookies = f.read()
@@ -144,7 +144,6 @@ def update_status():
         info_dict[t_id] = info
         print(info['task_name'], info['receive_status'] == 0 and "未完成" or (
             info['receive_status'] == 1 and "已完成" or info['receive_status']))
-        tick(0.5)
         
 def check_time(target_time):
     now = datetime.datetime.now()
@@ -169,19 +168,21 @@ def single_task(check_status = True, enable_conf_time = True, just_receive = Fal
 
 def just_receive_mode():
     update_status()
+    tick(0.5)
     # 目标时间
-    target_time = datetime.datetime.strptime("2023-08-29 00:00:00", r"%Y-%m-%d %H:%M:%S")
+    target_time = datetime.datetime.strptime("2023-09-01 02:00:00", r"%Y-%m-%d %H:%M:%S")
     target_time = target_time - datetime.timedelta(seconds=0)
     print(f"实际预定时间：{target_time}")
     while (True):
         if check_time(target_time):
+            update_status()
             while (True):
                 for t_id, info in info_dict.items():
                     r = receive(info)
                     print(t_id, r)
                 # tick(0.5)
-                if ("频繁" in r):
-                    tick(0.5)
+                # if ("频繁" in r):
+                #     tick(0.5)
         else:
             print("Waiting...", target_time - datetime.datetime.now())
             if (target_time - datetime.datetime.now()> datetime.timedelta(minutes=5)):

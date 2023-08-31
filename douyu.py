@@ -33,8 +33,12 @@ taskId_config = [
     #     "name": "里程碑-累计开播26天"
     # },
     {
-        "taskId": 224355,
-        "name": "进阶主播开播18天"
+        "taskId": 230913,
+        "name": "【萌新】120星琼"
+    },
+    {
+        "taskId": 230803,
+        "name": "200星琼w1"
     },
 ]
 
@@ -100,6 +104,20 @@ class GetStatus(DouyuRequest):
                       )), end=' ')
             print(eachBonus['prizeInfo'][0]['remain']['remainDesc'], end=" ")
             print(f"共{eachBonus['prizeInfo'][0]['remain']['maxNumDesc']}")
+    
+    def buildConf(self):
+        text = self.request()
+        resJson = json.loads(text)['data']
+        taskInfoList=[]
+        for eachTask in resJson:
+            taskInfoList.append(
+                {
+                    "taskId": eachTask['taskId'], 
+                    "name": eachTask["prizeInfo"][0]['name']
+                }
+            )
+        with open("douyu/res.json", "w+", encoding="utf-8") as f:
+            f.write(json.dumps(taskInfoList, ensure_ascii=False))
 
 
 class ReceiveBonus(DouyuRequest):
@@ -128,7 +146,7 @@ class BonusRecord(DouyuRequest):
         params = {
             "pageSize":	10,
             "currentPage": 1,
-            "actAlias": "20230713CEETI",
+            "actAlias": "20230807XFCUE",
         }
         r = requests.get(url=self.url, params=params, headers=self.headers)
         return r.text
@@ -159,7 +177,7 @@ def check_time(target_time):
 def just_receive_mode():
     # 目标时间
     target_time = datetime.datetime.strptime(
-        "2023-08-07 18:00:00", r"%Y-%m-%d %H:%M:%S")
+        "2023-09-01 18:00:00", r"%Y-%m-%d %H:%M:%S")
     target_time = target_time - datetime.timedelta(seconds=3)
     print(f"实际预定时间：{target_time}")
     # 检查cookies
@@ -177,7 +195,7 @@ def just_receive_mode():
                 for receiveBonus in readyList:
                     r = receiveBonus.request()
                     print(r)
-                # tick(0.5)
+                tick(0.5)
                 if ("频繁" in r or "过快" or "繁忙" in r):
                     tick(0.5)
         else:
@@ -193,10 +211,25 @@ def bonus_record_mode():
     br = BonusRecord()
     br.update()
 
+def build_res_mode():
+    taskIds = [
+        230911,230912,230913,230914,230915,
+        230900,230901,230902,
+        230797,230803,230804,230805,
+        230906,230907,230908,230909,
+        230810,230811,230812,230813,
+        230814,230815,230816,230817,
+        230818,230819,230820,230821,
+        230822,230823,230824,230825,
+    ]
+    gs = GetStatus(taskIdList=taskIds)
+    gs.buildConf()
+
 def main_loop():
-    bonus_record_mode()
-    # just_receive_mode()
+    # bonus_record_mode()
+    just_receive_mode()
     # update_status()
+    # build_res_mode()
 
 
 if __name__ == "__main__":
