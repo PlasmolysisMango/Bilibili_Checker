@@ -32,13 +32,13 @@ taskId_config = [
     #     "taskId": 217724,
     #     "name": "里程碑-累计开播26天"
     # },
+    # {
+    #     "taskId": 230914,
+    #     "name": "【萌新】180星琼"
+    # },
     {
-        "taskId": 230913,
-        "name": "【萌新】120星琼"
-    },
-    {
-        "taskId": 230803,
-        "name": "200星琼w1"
+        "taskId": 230805,
+        "name": "320星琼w1"
     },
 ]
 
@@ -177,7 +177,7 @@ def check_time(target_time):
 def just_receive_mode():
     # 目标时间
     target_time = datetime.datetime.strptime(
-        "2023-09-01 18:00:00", r"%Y-%m-%d %H:%M:%S")
+        "2023-09-04 18:00:00", r"%Y-%m-%d %H:%M:%S")
     target_time = target_time - datetime.timedelta(seconds=3)
     print(f"实际预定时间：{target_time}")
     # 检查cookies

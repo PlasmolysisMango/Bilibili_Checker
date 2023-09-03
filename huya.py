@@ -8,10 +8,10 @@ DEBUG = False
 
 advancedLevelList = [
     {
-        "level": 2,
+        "level": 3,
         "actId": 446,
-        "levelName": "开播3天",
-        "levelExp": 30,
+        "levelName": "开播5天",
+        "levelExp": 50,
         "levelDesc": "",
         "prizeList": []
     },
@@ -160,7 +160,7 @@ def just_receive_mode():
     for eachDict in advancedLevelList:
         requestParamsList.append(RequestParams(eachDict))
     # 目标时间
-    target_time = datetime.datetime.strptime("2023-09-01 02:00:00", r"%Y-%m-%d %H:%M:%S")
+    target_time = datetime.datetime.strptime("2023-09-04 00:00:00", r"%Y-%m-%d %H:%M:%S")
     target_time = target_time - datetime.timedelta(seconds=2)
     print(f"预定时间{target_time}")
     
