@@ -1,7 +1,7 @@
 [
     {
         "level": 1,
-        "actId": 446,
+        "actId": 448,
         "levelName": "开播1天",
         "levelExp": 10,
         "levelDesc": "",
@@ -9,7 +9,7 @@
     },
     {
         "level": 2,
-        "actId": 446,
+        "actId": 448,
         "levelName": "开播3天",
         "levelExp": 30,
         "levelDesc": "",
@@ -17,7 +17,7 @@
     },
     {
         "level": 3,
-        "actId": 446,
+        "actId": 448,
         "levelName": "开播5天",
         "levelExp": 50,
         "levelDesc": "",
@@ -25,7 +25,7 @@
     },
     {
         "level": 4,
-        "actId": 446,
+        "actId": 448,
         "levelName": "开播6天",
         "levelExp": 60,
         "levelDesc": "",

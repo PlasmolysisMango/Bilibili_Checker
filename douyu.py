@@ -226,8 +226,8 @@ def build_res_mode():
     gs.buildConf()
 
 def main_loop():
-    # bonus_record_mode()
-    just_receive_mode()
+    bonus_record_mode()
+    # just_receive_mode()
     # update_status()
     # build_res_mode()
 

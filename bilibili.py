@@ -37,20 +37,20 @@ id_config = [
     #    "name": "牛蛙",
     #    "time": "00:00:00", 
     # }, 
+    # {
+    #    "t_id": "b0c28690",
+    #    "name": "累积5天",
+    #    "time": "00:00:00", 
+    # }, 
     {
-       "t_id": "b0c28690",
-       "name": "累积5天",
-       "time": "00:00:00", 
-    }, 
-    {
-       "t_id": "ffab48e5",
+       "t_id": "20ae2e64",
        "name": "20tian",
        "time": "00:00:00", 
     }, 
 ]
 
 # 此处配置抢兑换码页面的请求中带的csrf字段
-csrf = "cf9bd4b318d4387f0239c2c99b50584f"
+csrf = "70da2b5a463d9348b39e810593c41492"
 
 with open("bilibili/cookies.txt", "r+", encoding="utf-8") as f:
     common_cookies = f.read()
@@ -170,7 +170,7 @@ def single_task(check_status = True, enable_conf_time = True, just_receive = Fal
 def just_receive_mode():
     update_status()
     # 目标时间
-    target_time = datetime.datetime.strptime("2023-09-05 00:00:00", r"%Y-%m-%d %H:%M:%S")
+    target_time = datetime.datetime.strptime("2023-09-20 00:00:00", r"%Y-%m-%d %H:%M:%S")
     target_time = target_time - datetime.timedelta(seconds=0)
     print(f"实际预定时间：{target_time}")
     while (True):
@@ -181,7 +181,7 @@ def just_receive_mode():
                     r = receive(info)
                     print(t_id, r)
                 # tick(0.5)
-                if ("频率" in r):
+                if ("频繁" in r):
                     tick(0.5)
         else:
             print("Waiting...", target_time - datetime.datetime.now())
