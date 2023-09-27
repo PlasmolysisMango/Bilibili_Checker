@@ -170,7 +170,7 @@ def single_task(check_status = True, enable_conf_time = True, just_receive = Fal
 def just_receive_mode():
     update_status()
     # 目标时间
-    target_time = datetime.datetime.strptime("2023-09-28 00:00:00", r"%Y-%m-%d %H:%M:%S")
+    target_time = datetime.datetime.strptime("2023-09-29 00:00:00", r"%Y-%m-%d %H:%M:%S")
     target_time = target_time - datetime.timedelta(seconds=0)
     print(f"实际预定时间：{target_time}")
     while (True):
